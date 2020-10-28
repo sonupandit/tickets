@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'GothamBook';
+  src: url('gothambook-webfont.eot');
+  src: url('gothambook-webfont.eot?#iefix') format('embedded-opentype'),
+       url('gothambook-webfont.woff2') format('woff2'),
+       url('gothambook-webfont.woff') format('woff'),
+       url('gothambook-webfont.ttf') format('truetype'),
+       url('gothambook-webfont.svg#gothambookregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'GothamMedium';
+  src: url('gothammedium-webfont.eot');
+  src: url('gothammedium-webfont.eot?#iefix') format('embedded-opentype'),
+       url('gothammedium-webfont.woff2') format('woff2'),
+       url('gothammedium-webfont.woff') format('woff'),
+       url('gothammedium-webfont.ttf') format('truetype'),
+       url('gothammedium-webfont.svg#gothammediumregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'GothamBold';
+  src: url('gothambold-webfont.eot');
+  src: url('gothambold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('gothambold-webfont.woff2') format('woff2'),
+       url('gothambold-webfont.woff') format('woff'),
+       url('gothambold-webfont.ttf') format('truetype'),
+       url('gothambold-webfont.svg#gothamboldregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('icomoon.eot?6xv2h4');
+    src:  url('icomoon.eot?6xv2h4#iefix') format('embedded-opentype'),
+      url('icomoon.ttf?6xv2h4') format('truetype'),
+      url('icomoon.woff?6xv2h4') format('woff'),
+      url('icomoon.svg?6xv2h4#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .icon-cancel:before {
+    content: "\e900";
+  }
+  .icon-check:before {
+    content: "\e901";
+  }
+  .icon-search:before {
+    content: "\e902";
+  }
+  .icon-tickets:before {
+    content: "\e903";
+  }
+  .icon-minus:before {
+    content: "\e904";
+  }
+  .icon-plus:before {
+    content: "\e905";
+  }
+  .icon-left:before {
+    content: "\e906";
+  }

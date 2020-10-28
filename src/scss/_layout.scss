@@ -1,0 +1,860 @@
+.animTop{
+    visibility: hidden;
+}
+.wrapper{
+    padding-left: 32px;
+}
+
+.ticket-section{
+    padding-bottom: 60px;
+}
+
+.ticket-listing{
+    > .row{
+        border-bottom: 1px solid $primaryLight;
+        visibility: hidden;
+        &:hover{
+            .listing-info{
+                h2{
+                    a{
+                        color: $secondary;
+                    }
+                }
+            }
+        }
+    }
+    .tl-img{
+        width: 300px;
+        display: block;
+        border-right: 1px solid $primaryLight;
+    }
+    .listing-info{
+        padding: 0 30px;
+        flex: 0 0 100%;
+        h2{
+            font-size: 18px;
+            margin-bottom: 15px;
+            a{
+                transition: color 0.3s;
+                text-decoration: none;
+            }
+        }
+        .listing-text{           
+            line-height: 1.5;
+            p{
+                margin-bottom:0;
+                strong{
+                    font-family: $mediumFont;
+                    font-weight: normal;
+                }
+            }
+        }
+        .venue{
+            color: $accent2;
+        }
+    }    
+
+}
+
+.ticket-button-wrap{
+    display: flex;
+    width: 235px;
+    height: 100%;
+    align-items: center;
+    padding: 0 24px;
+    border-left: 1px solid $primaryLight;    
+}
+
+.ticket-button{       
+    .price-box{
+        margin-top: 10px;        
+        font-size: 14px;
+        font-family: $mediumFont;
+        color: $accent2;
+    }
+}
+
+.title{
+    margin-bottom: 15px;
+    h1,h2{
+        font-size: 28px;
+        margin: 0;
+        color: $secondary;
+        font-family: $mediumFont;        
+    }
+}
+
+
+.page-hero{
+    height: 235px;
+    background-color: $secondary;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.hr-line{
+    margin-top: 40px;
+    margin-bottom: 0;
+    border-top: 1px solid $primaryLight;
+}
+
+.close-btn{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    display: inline-block;
+    font-size: 26px;
+}
+
+.pt-card{      
+    border-radius: 0;
+    background-color: transparent;
+    border: 0;    
+    position: relative;
+    .close-btn{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: none;
+    }
+    .card-header{
+        border: 0;
+        background-color: transparent;
+        text-align: center;
+        font-family: $mediumFont;
+        font-size: 24px;
+        padding: 50px 30px 30px;
+    }
+    .card-body{
+        padding: 0 30px 30px;
+        p{
+            margin-bottom: 20px;          
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li{
+                position: relative;
+                padding: 1px 0 1px 25px;
+                &:before{
+                    content: "";
+                    position: absolute;
+                    left: 5px;
+                    top: 9px;
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 50%;
+                    background-color: $white;
+                }
+            }
+        }
+    }
+    .price-strip{
+        text-align: center;
+        padding: 15px;
+        position: relative;
+        margin-bottom: 20px;
+        color: $black;
+        &:before{
+            content: "";
+            position: absolute;
+            left: -30px;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            background-color: red;
+            z-index: -1;
+            border-radius: 0 50px 50px 0;
+            border-radius: 0 100px 100px 0;
+        }
+        h3{
+            margin: 0;
+            font-size: 40px;
+            font-family: $bodyFontFamily;
+            font-weight: normal;           
+        }
+        small{
+           font-family: $mediumFont; 
+           font-size: 14px;          
+        }
+    }
+
+    .card-footer{
+        padding: 0 30px 50px;  
+    }
+
+    .btn-wrap{
+        ul{
+            margin: 0 -15px;
+            li{
+                flex: 1 0 0;
+                padding: 0 15px;                
+            }
+        }
+    }
+
+    .btn{                    
+        display: block;
+        border: 2px solid $white;
+        border-radius: 5px;
+        padding: 11px 15px;      
+    }
+
+ 
+ &.active-card{
+    .close-btn{
+        display: block;
+    }
+    
+ }   
+
+
+}
+
+
+.card-accent1{
+    &.highlight-card{
+        outline: 3px solid $accent1;
+    }
+    .card-header{
+        color: $accent1;
+    }
+    .price-strip{
+        &:before{
+            background-color: $accent1;
+        }
+    }
+}
+
+.card-accent2{
+    &.highlight-card{
+        outline: 3px solid $accent2;
+        outline-offset: -3px;
+    }
+    .card-header{
+        color: $accent2;
+    }
+    .price-strip{
+        &:before{
+            background-color: $accent2;
+        }
+    }
+}
+
+.card-accent3{
+    &.highlight-card{
+        outline: 3px solid $accent3;
+        outline-offset: -3px;
+    }
+    .card-header{
+        color: $accent3;
+    }
+    .price-strip{
+        &:before{
+            background-color: $accent3;
+        }
+    }
+}
+
+
+
+
+
+.table{
+    color: $white;
+    th,td{
+        padding: .5rem .75rem;
+    }
+    th{
+        font-family: $headingFont;
+        color: $secondary;
+        font-weight: normal;
+    }
+}
+
+
+.ch-box{
+    margin-top: 24px;
+    input{
+        display: none;
+        + label{
+            padding-left: 40px;   
+            position: relative;
+            cursor: pointer;
+            margin: 0;
+            &:after{
+                content:"";
+                font-family: 'icomoon' !important;
+                width: 28px;
+                height: 28px;
+                border-radius: 2px;
+                border: 1px solid $primaryLight;
+                position: absolute;
+                left: 0;
+                top: -3px;
+                text-align: center;
+                line-height: 26px;               
+            }         
+          a{
+              text-decoration: underline;
+          }  
+        }
+        &:checked{
+            + label{
+                &:after{
+                    content:"\e901";
+                }
+            }
+        }
+    }
+}
+
+
+.ticket-availability{
+    .title-row{
+        border-top: 1px solid $primaryLight;
+        border-bottom: 1px solid $primaryLight;        
+         h2{
+            color: $white;
+            font-size: 18px;
+            font-family: $mediumFont;
+         }
+    }
+    .ta-listing{
+        h3{
+            font-size: 18px;
+            font-family: $mediumFont;
+        }
+        .ta-info{
+            color: $secondary;
+        }
+    }
+}
+
+.ta-listing{
+    > .row{
+        padding-top: 28px;
+        padding-bottom: 28px;
+        border-bottom: 1px solid $primaryLight;       
+         .btn-ticket{
+             width: 180px;
+             justify-content: center;
+         }
+    }
+}
+
+
+.currency{
+    height: 100%;
+    align-items: center;
+    .currency-inner{
+        background-color: $primaryLight;
+        margin-right: -30px;
+        padding-right: 30px;
+        display: flex;
+        a{
+            display: block;
+            text-decoration: none;
+            padding: 20px 0 20px 20px;
+            opacity: 0.33;
+            font-family: $mediumFont;
+            &.active{
+                opacity: 1;
+                color: $secondary;
+            }
+        }
+    }
+}
+
+
+// Ticket detail
+.ticket-detail-section{
+    padding-top: 35px;
+    padding-bottom: 50px;
+}
+.back-btn{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 1px solid $primaryLight;
+    border-bottom: 1px solid $primaryLight;
+    a{
+        color: $white;
+        text-decoration: none;
+        font-family: $mediumFont;
+    }
+}
+
+.back-link{
+    a{
+        color: $white;
+        text-decoration: none;
+        font-family: $mediumFont;
+    }
+}
+
+.event-info{
+    h1{
+        margin-bottom: 5px;
+        font-family: $mediumFont;
+        font-size: 24px;
+        color: $secondary;
+    }
+    .event-time{
+        margin-bottom: 5px;
+        font-size: 15px;
+    }
+    .event-venue{
+        font-family: $headingFont;
+        color: $accent2;
+    }
+}
+
+.read-more{
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: underline;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+.event-text{
+    h2{
+        color: $secondary;
+        font-size: 18px;
+        font-family: $mediumFont;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+.ticket-category{
+    padding-top: 34px;
+    padding-bottom: 34px;
+    border-top: 1px solid $primaryLight;
+    border-bottom: 1px solid $primaryLight;
+    position: relative;
+    .close-btn{
+        display: none;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        color: $secondary;
+        z-index: 9;
+    }
+    .content{
+        @include media-breakpoint-up(xl){        
+            max-width: 90%;
+        }
+        h3{
+            font-size: 15px;
+            font-family: $mediumFont;
+            margin-bottom: 15px;
+        }
+        ul{
+            padding-left: 1rem;
+        }
+    }
+
+   &.active-tc{
+       .close-btn{
+           display: block;
+       }
+   } 
+    
+}
+
+
+.ticket-type{
+    h3{
+       font-size: 24px;
+       font-family: $headingFont;
+       text-transform: uppercase;       
+    }
+    strong{
+        display: block;
+        font-weight: normal;
+        font-size: 22px;
+        color: $secondary;
+    }
+}
+
+
+.tc-proceed{
+    .pt-action{
+        min-width: 390px;
+    }
+    .btn{
+        padding: 0.75rem;
+        border-radius: 5px;
+        border-width: 2px;
+    }
+}
+
+.ticket-counter{
+    .form-group{
+        label{
+            font-family: $mediumFont;
+            font-size: 17px;
+        }
+    }
+}
+
+
+.counter-group{
+    overflow: hidden;
+    border: 1px solid $accent1;
+    outline: 1px solid $accent1;
+    outline-offset: -1px;
+    .form-control{
+        width: 75px;
+        background-color: transparent !important;
+        border: 0;
+        height: 42px;
+        border-radius: 0;
+        text-align: center;
+        box-shadow: none;
+        color: $white;
+        font-size: 17px;
+        font-family: $mediumFont;
+    }
+    .btn{
+        border-radius: 0;
+        width: 42px;
+        height: 43px;
+        border: 0;
+        line-height: 1;
+        font-size: 18px;
+    }
+    .btn-decrease{
+        background-color: $accent1;
+        &:hover{
+            background-color: darken($accent1, 5%);
+        }
+    }
+    .btn-increase{
+        background-color: $accent2;
+        &:hover{
+            background-color: darken($accent2, 5%);
+        }
+    }
+}
+
+.fancybox-bg{
+    background-color: $black;
+}
+
+.fancybox-close-small{
+    padding: 0 !important;
+    right: 10px!important;
+    top: 10px!important;
+    color: $primaryLight;
+    &:before{
+        content:"\e900";
+        font-family: 'icomoon' !important;
+        font-size: 24px;
+    }
+    svg{
+        display: none;
+    }
+}
+
+.fancybox-button--close{
+    color: #ccc !important;
+    @extend .fancybox-close-small;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: -15px;
+    color: #ccc;
+}
+
+.back-form-btn{
+    color: #ccc;
+    display: block;
+    position: absolute;
+    text-decoration: none !important;
+    width: 40px;
+    height: 40px;
+    left: 20px;
+    top: 20px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.popup{
+    width: 100%;
+    background-color: $black;
+    border: 1px solid $primaryLight;
+    @include media-breakpoint-up(lg){
+        padding: 60px;
+    }
+    a{
+        color: inherit;
+    }
+    .popup-title{
+        font-size: 24px;  
+        margin-bottom: 30px;      
+        color: $secondary;
+    }
+
+    .btn{
+        padding: .75rem;
+    }
+
+    .or{
+        padding: 5px 0 20px;
+    }
+
+    .social-login{
+        li{
+            a{               
+                text-decoration: none;
+                padding: 10px 15px;
+                border: 1px solid $primaryLight;
+                display: flex;
+                align-items: center;
+                color: #ccc;
+                img{
+                    width: 36px;
+                    margin-right: 15px;
+                }
+            }
+            + li{
+                margin-top: 15px;
+            }            
+        }
+    }
+}
+
+
+.search-pop{   
+    border: none;
+    background-color: transparent;
+    .search-wrap{
+        max-width: 600px;
+        margin: auto;
+        .form-group{
+            position: relative;
+        }
+        .form-control{
+            color: #ccc;
+            background: transparent;
+            border: none;
+            height: 60px;
+            padding-left: 0;
+            font-size: 16px;
+            border-bottom: 2px solid #999;
+            padding-right: 70px;
+        }
+        .btn-search{
+            height: 60px;
+            width: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            color: $secondary;
+            font-size: 18px;
+        }
+    }
+}
+
+
+.form-control{
+    background-color: transparent !important;
+    font-size: 14px;
+    border-color: #444;
+    height: 48px;
+    color: $white !important;
+}
+
+.form-control:disabled, .form-control[readonly] {
+    background-color: #2c2c2c !important;
+    opacity: 1;
+    color: #999!important;
+}
+
+.my-account-nav{
+    .nav{
+        margin: 0 -10px;
+        li{
+            padding: 0 10px;
+            .btn{
+                border-width: 2px;
+                min-width: 150px;
+            }
+        }
+    }
+}
+
+.myaccount-title{
+    padding: 30px 0;
+    border-top: 1px solid $primaryLight;
+    border-bottom: 1px solid $primaryLight;
+    h1{
+        margin: 0;
+        color: $secondary;
+        font-size: 24px;
+        font-family: $mediumFont;
+    }
+}
+
+
+.myaccount-status{
+    .ms-box{
+        display: flex;
+        justify-content: center;
+        border: 1px solid $primaryLight;
+        padding: 100px 30px;
+        text-decoration: none;
+        height: 100%;
+        text-align: center;
+        .ms-inner {
+            flex: 0 0 100%;
+            max-width: 300px;
+            h2{
+                font-family: $mediumFont;
+                font-size: 24px;
+            }
+            h3{
+                font-family: $bodyFontFamily;
+                font-size: 16px; 
+                opacity: 0.55;
+            }
+        }
+    }
+
+    a.ms-box{
+        transition: background-color 0.3s;
+        &:hover{
+            background-color: #111;
+        }
+    }
+
+
+}
+
+.plan-info{
+    margin-top: 30px;
+    h4{
+        font-size: 20px;
+        font-family: $mediumFont;
+        margin-bottom: 15px;
+        color: $accent2;
+    }
+    .date-info{
+        padding: 15px 0;
+        border-top: 1px solid $primaryLight;
+        border-bottom: 1px solid $primaryLight;
+        font-size: 16px;
+        color: rgba($white, 0.5);
+    }
+    .btn{
+        border-radius: 5px;
+        padding: 0.75rem 1rem;
+    }
+}
+
+.booking-listing{
+    .tl-img{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.booking-info{
+    width: 235px;
+    padding-right: 15px;    
+    .booking-id,.paid{        
+        strong{
+            font-size: 18px;
+            font-family: $headingFont;
+            font-weight: normal;
+        }
+    }
+    .cat{
+        color: $accent2;
+        strong{
+            font-family: $mediumFont;
+        }
+    }
+    .n-tickets{
+        color: $accent2;
+        strong{
+            font-family: $mediumFont;
+        }
+    }
+}
+
+.payment-info{
+    background-color: $accent1;
+    color: $black;
+    padding: 15px 30px;
+    margin-top: 40px;
+    position: relative;
+    transition: background-color 0.3s;
+    &:after{
+        content: "";
+        position: absolute;
+        left: 30px;
+        top:-30px;
+        height: 0;
+        width: 0;
+        border: 15px solid transparent;
+        border-bottom-color: $accent1;
+        transition: border-color 0.3s;
+    }
+}
+
+.p-info{
+    padding-right: 15px;
+    font-size: 13px;
+    strong{
+        display: block;
+        font-family: $mediumFont;
+        font-size: 14px;
+    }
+}
+
+.booking-listing{
+    > .row{
+        &:hover{
+            .payment-info{
+                background-color: $secondary;
+            }
+            .payment-info{              
+                &:after{                   
+                    border-bottom-color: $secondary;
+                }
+            }
+        }
+    }
+}
+
+
+.st-active{
+    background-color: $accent2;
+    color: $black;
+    .ta-info{
+        color: $black !important;
+    }
+    .btn-ticket{
+        color: $black !important;
+        border-color: $black !important;
+        &:hover{
+            color: $white !important;
+            background-color:$black !important;
+        }
+    }
+}

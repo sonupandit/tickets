@@ -1,0 +1,40 @@
+$grid-gutter-width: 60px;
+$primary:       #000000;
+$secondary:     #f09c26;
+
+$primaryLight: #444;
+
+$accent1 : #f9f2d2;
+$accent2 : #fac9a9;
+$accent3 : #ffffff;
+
+$bodyTextColor: #fff;
+$placeholderColor: #ccc;
+
+$white: #fff;
+$black: #000;
+
+$darkGray: #636466;
+$lightGray: #E5E5E5;
+
+$bodyFontSize: 14px;
+$bodyLineHeight: 1.6;
+$bodyFontFamily: 'GothamBook', sans-serif;
+$headingFont: 'GothamBold', sans-serif;
+
+$mediumFont: 'GothamMedium', sans-serif;
+
+$h1Size: 36px;
+$h2Size: 30px;
+$h3Size: 18px;
+$h4Size: 16px;
+
+//fancybox fixed
+@function max($numbers...) {
+    @return m#{a}x(#{$numbers})
+    }
+    
+    @function min($numbers...) {
+    @return m#{i}n(#{$numbers})
+}
+

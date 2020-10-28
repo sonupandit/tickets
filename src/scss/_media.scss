@@ -1,0 +1,252 @@
+@media(min-width: 320px){
+    .container{
+        max-width: none;
+        // padding-left: 30px;
+        // padding-right: 30px;
+    }    
+}
+
+
+@media(max-width: 1199.2px){
+    .signin-mobile{
+        display: block;
+        margin-left: -20px;
+        margin-right: -20px;
+        padding: 18.5px 20px;
+        font-size: 20px;  
+        border-bottom: 1px solid #686868; 
+        text-decoration: none;
+    }
+    .main-nav{
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        min-height: 100vh;
+        padding: 20px;
+        width: 200px;
+        visibility: hidden;
+        background-color: $primaryLight;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: all 0.3s ease-out;
+        z-index: 999;
+        .nav {           
+            height: auto !important;
+            > li{
+                padding-left: 0 !important; 
+                flex: 0 0 100%;               
+                > a{
+                    padding: 15px 0;
+                    border-left: 0 !important;
+                    background-color: transparent !important;
+                    justify-content: flex-start;
+                    box-shadow: none !important;
+                    font-size: 16px;
+                    &:after{
+                        display: none;
+                    }                    
+                } 
+
+                &.accent1{
+                    a{
+                        color: $accent1;
+                    }
+                }
+                &.accent2{
+                    a{
+                        color: $accent2;
+                    }
+                }
+                &.accent3{
+                    a{
+                        color: $accent3;
+                    }
+                }
+
+            }
+        }
+    }
+
+.menu-active{
+    .main-nav{
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.logo img {    
+    max-width: 58px;
+}
+
+.logo-outer {
+    width: auto;
+}
+
+.ticket-listing {
+    .tl-img{
+        width: 240px;
+    }
+}
+
+.secondary-nav{
+    .nav{
+        li{
+            a{
+                padding: 25px;
+                &:after{
+                    height: 4px;
+                }
+            }
+        }
+    }
+}
+
+.login-nav{
+    width: auto;
+    .btn-search{
+        padding: 24px !important;
+    }
+}
+
+
+}
+
+
+
+@media(max-width: 991.2px){
+    .ticket-listing {
+       > .row{
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .tl-img{
+            border-right: 0;
+            margin-bottom: 10px;
+            margin-left: 30px;
+        }
+        .ticket-button-wrap{
+            border-left: 0;
+            align-items: flex-start;
+        }
+    }
+}
+
+
+
+
+@media(max-width: 767.2px){
+    .wrapper {
+        padding-left: 0;
+    }
+    .footer-main {
+        position: static;
+        width: auto;    
+        padding: 15px;    
+    }
+    .copyright{
+        text-align: center;
+    }
+
+    .ticket-listing{
+        > .row{
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+        .tl-img{
+            margin-left: 0;
+            width: auto;
+        }
+        .listing-info{
+            padding: 0 0 15px 0;
+        }
+        .ticket-button-wrap{
+            padding: 0;
+        }
+
+    }
+
+    .myaccount-status .ms-box{
+        padding: 30px;
+    }
+
+    .booking-info{
+        width: auto;
+        padding-right: 0;
+    }
+
+
+}
+
+
+
+@media(max-width: 575.2px){
+
+    .container,.container-fluid{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .row:not(.no-gutters){
+        margin-left: -15px;
+        margin-right: -15px;
+        > [class*="col"]{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+
+
+
+    .pt-card .price-strip h3{
+        font-size: 36px;
+    }
+    .tc-proceed{
+        .pt-action{
+            min-width: 0;
+            margin-top: 10px;
+        }
+
+    }
+    .secondary-nav{
+        .nav{
+            li{
+                a{
+                    padding: 20px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .popup{
+        padding: 25px 15px;
+    }
+
+    .back-form-btn{
+        left: 0;
+        top: 10px;
+    }
+
+    .pt-card .card-body {
+        padding: 0 15px 30px;
+    }
+
+
+    .my-account-nav .nav li .btn {       
+        min-width: 0;
+    }
+
+    .payment-info{
+        padding-top: 10px;
+    }
+  
+    .p-info{
+        margin-top: 5px;
+    }
+
+
+
+}
